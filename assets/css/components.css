@@ -637,6 +637,21 @@
   width: 3px;
   background: var(--c-teal);
 }
+.tool-shot {
+  display: block;
+  margin: 4px 0 14px;
+  overflow: hidden;
+  background: var(--c-night);
+  border: 1px solid var(--c-rule);
+  max-width: 100%;
+}
+.tool-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 400ms ease;
+}
+.tool:hover .tool-shot img { transform: scale(1.02); }
 .tool.mini-list { padding: 24px 0; }
 .tool.mini-list ul {
   list-style: none;
