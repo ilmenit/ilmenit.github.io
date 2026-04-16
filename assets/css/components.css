@@ -32,18 +32,13 @@
 }
 
 .hero h1.display {
-  font-size: clamp(56px, 11vw, 168px);
-  line-height: 0.92;
-  letter-spacing: -0.035em;
-
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 500;
   color: var(--c-ink);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   hyphens: none;
-}
-.hero h1.display .ampersand {
-  font-style: italic;
-  color: var(--c-coral);
-
 }
 
 .hero-handle {
