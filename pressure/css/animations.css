@@ -1,0 +1,193 @@
+/* Animation styles for tournament mode */
+
+/* Tournament Celebration */
+.tournament-celebration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.victory-confetti {
+    position: absolute;
+    opacity: 1;
+    border-radius: 4px;
+    animation: victory-fall 5s ease-in forwards;
+    z-index: 1000;
+}
+
+@keyframes victory-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1000px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+.tournament-trophy {
+    font-size: 60px;
+    margin-bottom: 20px;
+    animation: trophy-bounce 2s infinite;
+    text-shadow: 0 0 20px gold;
+}
+
+@keyframes trophy-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.final-stats {
+    font-style: italic;
+    margin: 20px 0;
+    color: #FFD700;
+}
+
+/* Transition effects for screens */
+.screen {
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Opponent interactions */
+.ladder-opponent {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ladder-opponent:not(.defeated):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ladder-opponent.defeated {
+    cursor: default;
+}
+
+/* Character entrance animation */
+@keyframes character-entrance {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#opponent-display {
+    animation: character-entrance 0.5s ease-out forwards;
+}
+
+/* Button hover animations */
+.large-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.large-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.large-btn:hover::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+/* Trophy animation */
+@keyframes trophy-shine {
+    0% {
+        background-position: -100px -100px, 0 0;
+    }
+    100% {
+        background-position: 100px 100px, 0 0;
+    }
+}
+
+.tournament-victory h2 {
+    position: relative;
+    color: #FFD700;
+    background: linear-gradient(45deg, rgba(255,215,0,0.5) 25%, transparent 25%, transparent 50%, rgba(255,215,0,0.5) 50%, rgba(255,215,0,0.5) 75%, transparent 75%, transparent);
+    background-size: 60px 60px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: trophy-shine 5s linear infinite;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Tournament badge rotation */
+@keyframes badge-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.opponent-status {
+    animation: badge-rotation 2s ease-in-out infinite;
+}
+
+/* Pulsing effect for current opponent indicator */
+@keyframes current-pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+}
+
+.ladder-opponent.current {
+    animation: current-pulse 2s infinite;
+}

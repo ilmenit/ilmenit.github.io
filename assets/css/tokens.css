@@ -1,0 +1,43 @@
+/* design tokens */
+:root {
+  --c-paper:  #EEE5D0;
+  --c-paper-2:#E4D9BE;
+  --c-ink:    #14101A;
+  --c-ink-2:  #2C2336;
+  --c-muted:  #7A6E5E;
+  --c-rule:   #CDBFA5;
+
+  --c-plum:   #5A1F4D;
+  --c-coral:  #C2513D;
+  --c-amber:  #E8A441;
+  --c-gold:   #F0C659;
+  --c-pale:   #F4D58A;
+  --c-sage:   #8FB27D;
+  --c-teal:   #3F847E;
+  --c-ocean:  #234E65;
+  --c-night:  #1F1635;
+  --c-link:   #5A1F4D;
+  --c-link-h: #C2513D;
+
+  --ff-display: "Spectral", Georgia, "Liberation Serif", "Times New Roman", serif;
+  --ff-body:    "Spectral", Georgia, "Liberation Serif", "Times New Roman", serif;
+  --ff-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --w-page:  1240px;
+  --w-text:  640px;
+
+  --border-hair: 1px solid var(--c-rule);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-paper:  #0C0814;
+    --c-paper-2:#15101E;
+    --c-ink:    #EFE6D2;
+    --c-ink-2:  #CEC2AA;
+    --c-muted:  #8A7D8F;
+    --c-rule:   #2A2133;
+    --c-link:   #F0C659;
+    --c-link-h: #E8A441;
+  }
+}

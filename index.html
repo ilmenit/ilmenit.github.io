@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jakub Dębski / ilmenit</title>
+<meta name="description" content="Personal homepage of Jakub Dębski. Chief Product Officer at ESET. Demoscene sizecoder. Atari 8-bit since age six.">
+<meta name="author" content="Jakub Dębski">
+<meta property="og:title" content="Jakub Dębski / ilmenit">
+<meta property="og:description" content="Chief Product Officer at ESET. Demoscene sizecoder. Atari 8-bit since age six.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='4' y='0' fill='%231F1635'/><rect width='16' height='4' y='4' fill='%23C2513D'/><rect width='16' height='4' y='8' fill='%23E8A441'/><rect width='16' height='4' y='12' fill='%233F847E'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="#top">jdebski / ilmenit</a>
+    <nav class="topbar-nav" aria-label="Primary">
+      <a href="#top">Start</a>
+      <a href="#about">About me</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#sizecoding">Sizecoding</a>
+      <a href="#beyond">Beyond</a>
+      <a href="#elsewhere">Elsewhere</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+
+  <!-- HERO ------------------------------------------------------------- -->
+  <section class="hero" id="top" aria-labelledby="name">
+    <div class="hero-grid">
+
+      <div class="hero-text">
+        <div class="hero-label">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Homepage · 2026 · ilmenit.github.io</span>
+        </div>
+
+        <h1 class="display" id="name">
+          Jakub<br>Dębski
+        </h1>
+
+        <div class="hero-handle">
+          known on <span class="at">pouët</span>, <span class="at">Demozoo</span> and
+          <span class="at">GitHub</span> as <span class="at">ilmenit</span>
+        </div>
+
+        <p class="hero-lead">
+          Chief Product Officer at ESET. My first computer was an 8-bit Atari 65XE
+          when I was six years old. I learned BASIC on it, and computers have been
+          a passion ever since. An Amiga 500 came next, then a PC, but the Atari
+          is the one I kept coming back to. On evenings and weekends I still write
+          code, often for machines from that era.
+        </p>
+
+        <div class="hero-meta" role="list">
+          <span role="listitem"><b>ESET</b> · product</span>
+          <span role="listitem"><b>Agenda</b> · demoscene</span>
+          <span role="listitem"><b>Atari 8-bit</b> · since the nineties</span>
+        </div>
+      </div>
+
+      <aside class="hero-canvas-wrap" aria-label="Rotating intro replays">
+        <div class="canvas-frame" id="hero-frame"></div>
+        <figcaption class="canvas-caption">
+          <span class="k">Now playing</span><a id="hero-now-label" href="https://www.pouet.net/prod.php?which=62917">Mona</a>
+          <span class="k">Source</span><span id="hero-now-source">Own intros, rotated.</span>
+          <span class="k">Algorithm</span><span id="hero-now-algo">&nbsp;</span>
+          <div class="now" id="hero-now-pips" role="tablist" aria-label="Choose effect"></div>
+        </figcaption>
+      </aside>
+
+    </div>
+  </section>
+
+  <div class="raster-rule" aria-hidden="true" id="rasterRule"></div>
+
+  <!-- SECTION 01 ABOUT -------------------------------------------------- -->
+  <section class="section reveal" id="about">
+    <div class="section-head">
+      <div class="section-num"><span class="dot"></span>§ 01 · About</div>
+      <h2 class="section-title">An <em>incomplete</em> table of contents for one head.</h2>
+    </div>
+    <div class="section-body">
+      <div class="aside">Long reads / crafts / obsessions</div>
+      <div class="prose">
+        <p>
+          I have spent twenty-five years in cybersecurity and most of those years
+          in product and engineering leadership at the same company. In parallel,
+          I have never stopped writing code for the machines I grew up with, or
+          entering demoscene competitions where the brief is measured in bytes
+          rather than features.
+        </p>
+        <p>
+          The through-line across most of what follows is a handful of long-standing
+          interests: machine learning, classical as much as the deep-learning sort;
+          IT security and reverse engineering; artificial life and evolutionary
+          computation; all flavors of optimization; applied mathematics, algorithms
+          and information theory; design patterns, programming languages, and
+          programming itself as a craft.
+        </p>
+        <p>
+          This page collects the work I do outside of the day job, and a little of the
+          day job too. If something here looks interesting, the links go to the real
+          thing: source code, downloads, write-ups, forum threads.
+        </p>
+        <p>
+          Based in Slovakia. Fluent in English, native Polish, advanced Slovak,
+          basic Russian and German. Reachable by email at the bottom of the page.
+        </p>
+
+        <div class="devices" aria-label="The machines that started it all">
+          <figure>
+            <div class="frame"><img loading="lazy" src="assets/img/devices/atari-130xe.webp" alt="Atari 130XE, an 8-bit home computer"></div>
+            <figcaption><b>Atari 65XE / 130XE · 1985</b>First computer. BASIC, then assembly, then a decade of learning the 6502 the long way round. Still the platform I keep coming back to.</figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img loading="lazy" src="assets/img/devices/amiga-500.webp" alt="Commodore Amiga 500, released 1987"></div>
+            <figcaption><b>Amiga 500 · 1987</b>What came next. Multitasking, hardware copper lists, and demoscene software on floppies. A different kind of ambition.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02 WORK --------------------------------------------------- -->
+  <section class="section reveal" id="work">
+    <div class="section-head">
+      <div class="section-num"><span class="dot"></span>§ 02 · Work</div>
+      <h2 class="section-title">Twenty-five years of <em>cybersecurity</em>, mostly at the same company.</h2>
+    </div>
+    <div class="section-body">
+      <div class="aside">ESET · Arcabit · MKS</div>
+      <div>
+        <div class="prose">
+          <p>
+            I started in 2000 as a virus analyst at MKS in Warsaw, disassembling
+            DOS viruses by hand. Since 2017 I have been Chief Product Officer at
+            ESET, where I set the product vision and strategy for a portfolio
+            that today centers on XDR, MDR, endpoint and cloud security.
+          </p>
+          <p>
+            Before the product role, I spent a decade running R&amp;D. I founded
+            ESET Poland R&amp;D in 2008 and grew it from a legal entity on paper
+            to an award-winning office of fifty-plus engineers and analysts, and
+            from 2013 led Core Technology Development, responsible for the
+            detection engine and the surrounding cloud systems.
+          </p>
+        </div>
+
+        <ul class="timeline">
+          <li><span class="yr">2017 → now</span><span class="role">Chief Product Officer <em>· ESET</em></span></li>
+          <li><span class="yr">2013 → 2017</span><span class="role">Head of Core Technology Development <em>· ESET</em></span></li>
+          <li><span class="yr">2008 → 2017</span><span class="role">Founder &amp; Managing Director <em>· ESET Poland R&amp;D</em></span></li>
+          <li><span class="yr">2007 → 2008</span><span class="role">Senior Developer <em>· ESET</em></span></li>
+          <li><span class="yr">2005 → 2006</span><span class="role">Antivirus Engine Lead <em>· Arcabit</em></span></li>
+          <li><span class="yr">2003 → 2005</span><span class="role">Senior Developer <em>· MKS</em></span></li>
+          <li><span class="yr">2000 → 2003</span><span class="role">Virus Analyst <em>· MKS</em></span></li>
+        </ul>
+
+        <ul class="highlights">
+          <li>
+            <span class="idx">2008 →</span>
+            <span>Founded <strong>ESET Poland R&amp;D</strong> and grew it from a legal entity on paper to an award-winning office of fifty-plus engineers and analysts. The office design later inspired other regional offices.</span>
+          </li>
+          <li>
+            <span class="idx">2013 →</span>
+            <span>Built the foundation of ESET's first <strong>machine-learning pipeline</strong> for automated malware classification, in Python with scikit-learn, XGBoost and TensorFlow. Still in production.</span>
+          </li>
+          <li>
+            <span class="idx">2016 →</span>
+            <span>Initiated and delivered ESET's <strong>EDR</strong> product, later the <strong>XDR</strong> platform that underpins the current MDR service offering.</span>
+          </li>
+          <li>
+            <span class="idx">★</span>
+            <span>Received the ESET <strong>Medal of Honor</strong>, an award voted by employees for representing the company's values.</span>
+          </li>
+          <li>
+            <span class="idx">+</span>
+            <span>Designed a hiring program for reverse engineers and security engineers that is still in use as a recruitment method across several offices.</span>
+          </li>
+        </ul>
+
+        <div class="subsection">
+          <div class="subsection-head">
+            <div class="subsection-num">02 / a</div>
+            <h3 class="subsection-title">Areas of expertise</h3>
+          </div>
+          <div class="prose subsection-intro">
+            <p>
+              Product management, vision and strategy. XDR, EDR, MDR, endpoint
+              and cloud security. Applied machine learning. Reverse engineering.
+              Design patterns and programming languages. People and branch-office
+              management. Public speaking on all of the above.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <div class="subsection-head">
+            <div class="subsection-num">02 / b</div>
+            <h3 class="subsection-title">Education</h3>
+          </div>
+          <div class="prose subsection-intro">
+            <p>
+              MSc in Computer Science, Military University of Technology, Warsaw
+              (2000&ndash;2005). My thesis, <em>"Detection of Internet Threats
+              using Neural Networks"</em>, applied neural networks to intrusion
+              detection a good decade before "AI" became a marketing word.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <div class="subsection-head">
+            <div class="subsection-num">02 / c</div>
+            <h3 class="subsection-title">Speaking</h3>
+          </div>
+          <div class="prose subsection-intro">
+            <p>
+              I speak regularly at international security and business
+              conferences, and at internal ESET events. Topics tend to cluster
+              around threat intelligence, machine learning in security, product
+              strategy, and the bits of our research that are safe to talk about
+              in public. Audiences have been kind enough to put me near the top
+              of the ratings more than once.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 03 PROJECTS ---------------------------------------------- -->
+  <section class="section reveal" id="projects">
+    <div class="section-head">
+      <div class="section-num"><span class="dot"></span>§ 03 · Projects</div>
+      <h2 class="section-title">Three things I do on <em>evenings</em> and <em>weekends</em>.</h2>
+    </div>
+    <div class="section-body">
+      <div class="aside">Games / Sizecoding / Tools</div>
+      <div class="prose lead">
+        <p>
+          Make games for old computers. Write demoscene intros that fit in a few
+          hundred bytes. Build the tools that make both possible.
+        </p>
+      </div>
+    </div>
+
+    <!-- Games ---------------------------------------------------------- -->
+    <div class="subsection" id="games">
+      <div class="subsection-head">
+        <div class="subsection-num">03 / a · Games</div>
+        <h3 class="subsection-title">Small games for <em>old hardware</em>.</h3>
+      </div>
+      <div class="section-body">
+        <div class="aside">Atari 8-bit, mostly</div>
+        <div>
+          <div class="prose">
+            <p>
+              Usually Atari 8-bit, occasionally with ports to other platforms. The
+              constraints are the point: sixty-four kilobytes of RAM concentrates
+              the mind.
+            </p>
+            <p>
+              Dozens of finished or half-finished projects over the years; a few
+              worth showing.
+            </p>
+          </div>
+          <div class="cards">
+
+            <article class="card">
+              <div class="card-year">2010</div>
+              <div class="card-body">
+                <a class="card-shot" href="https://www.pouet.net/prod.php?which=54972"><img loading="lazy" src="assets/img/games/his-dark-majesty.webp" alt="His Dark Majesty gameplay screenshot"></a>
+                <h4>His Dark Majesty</h4>
+                <div class="card-tags"><span>Turn-based strategy</span><span>Atari 8-bit</span></div>
+                <p class="card-desc">
+                  Heavily inspired by the old Java mobile games <em>Reign of Swords</em>
+                  and <em>Ancient Empires</em>, with a nod to <em>Advance Wars</em> and
+                  <em>The Battle for Wesnoth</em>. Fog of war, line of sight, a party
+                  of knights versus the undead. Reviewers were kind to it at the time
+                  and it is still played today.
+                </p>
+                <div class="card-links">
+                  <a href="https://www.pouet.net/prod.php?which=54972">pouët</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card featured">
+              <div class="card-year">2022</div>
+              <div class="card-body">
+                <a class="card-shot" href="http://aim.atariscene.pl/"><img loading="lazy" src="assets/img/games/adam-is-me.webp" alt="Adam Is Me gameplay screenshot"></a>
+                <h4>Adam Is Me</h4>
+                <div class="card-tags"><span>Puzzle</span><span>Atari XL/XE</span><span>Ports: ST, Amiga, Jaguar</span></div>
+                <p class="card-desc">
+                  A puzzle game for Atari XL/XE inspired by <em>Baba Is You</em> and
+                  <em>Robbo</em>, with its own mechanics and levels. The reception
+                  was generous enough that the game was ported to Atari ST, Amiga
+                  and Atari Jaguar, and shipped in a <strong>limited physical edition
+                  with LEGO bricks in the box</strong>, which I believe is a first
+                  for the platform.
+                </p>
+                <div class="card-links">
+                  <a href="http://aim.atariscene.pl/">aim.atariscene.pl</a>
+                  <a href="https://github.com/ilmenit/AdamIsMe">github.com/ilmenit/AdamIsMe</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-year">2013</div>
+              <div class="card-body">
+                <a class="card-shot" href="https://forums.atariage.com/topic/218058-the-hunt-from-abbuc-sw-contest-2013/"><img loading="lazy" src="assets/img/games/the-hunt.webp" alt="The Hunt gameplay screenshot"></a>
+                <h4>The Hunt</h4>
+                <div class="card-tags"><span>Tactical roguelike</span><span>Atari 8-bit</span><span>ABBUC SW Contest</span></div>
+                <p class="card-desc">
+                  You play the predator. A reimagined <em>Hoplite</em> for the
+                  Atari 8-bit: tight rulesets, turn-based combat, one clean
+                  decision at a time. From the 2013 ABBUC Software Contest. Code
+                  by me, graphics by Paweł "ripek" Szewczyk, music by Michał
+                  "stRing" Radecki.
+                </p>
+                <div class="card-links">
+                  <a href="https://forums.atariage.com/topic/218058-the-hunt-from-abbuc-sw-contest-2013/">atariage.com</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-year">2024</div>
+              <div class="card-body">
+                <a class="card-shot tall" href="https://cinderloomstudio.itch.io/narrative-interactive-fiction-the-art-of-masquerade"><img loading="lazy" src="assets/img/games/art-of-masquerade.webp" alt="The Art of Masquerade cover art"></a>
+                <h4>The Art of Masquerade</h4>
+                <div class="card-tags"><span>Narrative / IF</span><span>Custom VM</span><span>AI-assisted</span></div>
+                <p class="card-desc">
+                  An experiment in AI-assisted authoring. The interesting part,
+                  for programmers, is underneath the story: a <strong>custom
+                  programming language (NIF) with a hand-written lexer, parser,
+                  compiler and stack-based VM</strong>, built from scratch to run
+                  the narrative engine.
+                </p>
+                <div class="card-links">
+                  <a href="https://cinderloomstudio.itch.io/narrative-interactive-fiction-the-art-of-masquerade">cinderloomstudio.itch.io</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-year">early</div>
+              <div class="card-body">
+                <h4>Xenocide: The Roguelike</h4>
+                <div class="card-tags"><span>Roguelike</span><span>Survival horror</span></div>
+                <p class="card-desc">
+                  An early experiment: text-based, turn-based survival horror in
+                  roguelike form. Closer in spirit to <em>Half-Life</em> or
+                  <em>Alien vs Predator</em> than to <em>X-COM</em>. You are out
+                  of ammunition, out of light, and out of luck.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-year">~~~</div>
+              <div class="card-body">
+                <a class="card-shot" href="pressure/"><img loading="lazy" src="assets/img/games/pressure.webp" alt="Pressure board game screenshot"></a>
+                <h4>Pressure</h4>
+                <div class="card-tags"><span>Minimalist board game</span><span>Playable in browser</span></div>
+                <p class="card-desc">
+                  A small abstract board game on a 5×5 grid with twelve tokens.
+                  A pushing mechanic makes it behave more like chess than its
+                  size suggests. Playable directly from this site against a
+                  local opponent.
+                </p>
+                <div class="card-links">
+                  <a href="pressure/">play</a>
+                  <a href="https://github.com/ilmenit/pressure">github.com/ilmenit/pressure</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-year">10 LINES</div>
+              <div class="card-body">
+                <h4>Ten-line Roguelike</h4>
+                <div class="card-tags"><span>Turbo Basic XL</span><span>Atari 8-bit</span><span>NOMAM Basic Ten-Liners</span></div>
+                <p class="card-desc">
+                  A roguelike written in ten lines of Atari BASIC, later
+                  re-implemented on PICO-8 and TIC-80 by the community.
+                </p>
+                <div class="card-links">
+                  <a href="https://www.mobygames.com/game/65715/roguelike/">mobygames.com</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-year">2014</div>
+              <div class="card-body">
+                <h4>Abyss</h4>
+                <div class="card-tags"><span>Space trading</span><span>Atari 8-bit</span><span>NOMAM Basic Ten-Liners 2014</span></div>
+                <p class="card-desc">
+                  A galaxy in ten lines of Turbo Basic XL. You are a trader;
+                  Armageddon arrives on day 1000; between now and then there are
+                  planets, missions, and a black hole or two.
+                </p>
+                <div class="card-links">
+                  <a href="https://www.mobygames.com/game/65861/abyss/">mobygames.com</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-year">2005</div>
+              <div class="card-body">
+                <a class="card-shot" href="https://www.allegro.cc/depot/MoonDefence"><img loading="lazy" src="assets/img/games/moon-defence.webp" alt="Moon Defence gameplay screenshot"></a>
+                <h4>Moon Defence</h4>
+                <div class="card-tags"><span>Arcade</span><span>Windows</span><span>Allegro</span></div>
+                <p class="card-desc">
+                  A remake of Tom Hudson's Atari 8-bit classic <em>Planetary
+                  Defense</em>. Mouse, keyboard, high scores, explosions. The
+                  oldest release here that is still easy to run.
+                </p>
+                <div class="card-links">
+                  <a href="https://www.allegro.cc/depot/MoonDefence">allegro.cc / depot</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Retro-computing tools ----------------------------------------- -->
+    <div class="subsection" id="retro-computing">
+      <div class="subsection-head">
+        <div class="subsection-num">03 / b · Retro-computing</div>
+        <h3 class="subsection-title">Tools I wanted to <em>exist</em>.</h3>
+      </div>
+      <div class="section-body">
+        <div class="aside">Side projects · hardware</div>
+        <div>
+          <div class="prose">
+            <p>
+              Side projects that exist mostly because I wanted the tool to exist,
+              plus a few pieces of hardware I keep going back to.
+            </p>
+          </div>
+
+          <div class="tools">
+
+            <article class="tool featured">
+              <h4>RastaConverter</h4>
+              <a class="repo" href="https://github.com/ilmenit/RastaConverter">github.com/ilmenit/RastaConverter</a>
+              <p class="tool-desc">
+                A graphics converter that takes a modern image and produces a display
+                list for the Atari 8-bit, abusing mid-scanline register changes,
+                sprite multiplexing and palette tricks to get something like a
+                photograph out of a machine with 128 colors and no framebuffer. The
+                interesting part is the search: an embedded 6502/ANTIC emulator
+                driven by <strong>Late Acceptance Hill Climbing</strong> and
+                <strong>Diversified Late Acceptance Search</strong>, optimizing the
+                program that draws the picture rather than the picture itself.
+                Profile Guided Optimization, reproducible runs, auto-save and resume.
+              </p>
+            </article>
+
+            <article class="tool">
+              <h4>AltirraSDL</h4>
+              <a class="repo" href="https://github.com/ilmenit/AltirraSDL">github.com/ilmenit/AltirraSDL</a>
+              <p class="tool-desc">
+                An SDL port of the excellent Altirra Atari emulator.
+              </p>
+            </article>
+
+            <article class="tool">
+              <h4>CC65 Advanced Optimizations</h4>
+              <a class="repo" href="https://github.com/ilmenit/CC65-Advanced-Optimizations">github.com/ilmenit/CC65-Advanced-Optimizations</a>
+              <p class="tool-desc">
+                A write-up on squeezing performance and size out of C on the 6502, for
+                people who think compilers are magic but still want the magic to fit
+                in 16 kilobytes.
+              </p>
+            </article>
+
+            <article class="tool mini-list">
+              <h4>Audio for 8-bit targets</h4>
+              <p class="tool-desc">
+                Three related projects about getting modern audio onto 8-bit hardware.
+              </p>
+              <ul>
+                <li><span class="lbl">vq-tracker</span><a href="https://github.com/ilmenit/vq-tracker">github.com/ilmenit/vq-tracker</a> · vector-quantization based tracker</li>
+                <li><span class="lbl">pokey-stream-player</span><a href="https://github.com/ilmenit/pokey-stream-player">github.com/ilmenit/pokey-stream-player</a> · streaming audio player for the POKEY chip</li>
+                <li><span class="lbl">8bit-sound-compress</span><a href="https://github.com/ilmenit/8bit-sound-compress">github.com/ilmenit/8bit-sound-compress</a> · compression for short audio samples</li>
+              </ul>
+            </article>
+
+            <article class="tool">
+              <h4>DOSBUILD / DOSBOXBUILD</h4>
+              <a class="repo" href="https://github.com/ilmenit/DOSBUILD">github.com/ilmenit/DOSBUILD</a>
+              <p class="tool-desc">
+                Build systems for DOS-era C/C++ projects, for when you actually want
+                to target DOS. See also
+                <a href="https://github.com/ilmenit/DOSBOXBUILD">DOSBOXBUILD</a>.
+              </p>
+            </article>
+
+            <article class="tool">
+              <h4>Retro handhelds</h4>
+              <p class="tool-desc">
+                The other side of retro-computing: playing old games on small modern
+                devices built by people who love the same machines. Current favorites
+                are the <strong>Miyoo Mini</strong> and the <strong>Ayn Odin 2</strong>.
+                Both are small miracles of how far emulation and embedded hardware
+                have come.
+              </p>
+            </article>
+
+            <article class="tool">
+              <h4>prime-fold</h4>
+              <a class="repo" href="https://github.com/ilmenit/prime-fold">github.com/ilmenit/prime-fold</a>
+              <p class="tool-desc">
+                The same optimization family applied to a very different problem:
+                folding primes. Related in spirit to RastaConverter in that the heavy
+                lifting is a well-tuned local search.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04 SIZECODING ------------------------------------------- -->
+  <section class="section reveal" id="sizecoding">
+    <div class="section-head">
+      <div class="section-num"><span class="dot"></span>§ 04 · Sizecoding</div>
+      <h2 class="section-title">Intros that fit in <em>256 bytes</em>, sometimes less.</h2>
+    </div>
+    <div class="section-body">
+      <div class="aside">Group: <a href="https://www.pouet.net/groups.php?which=11222">Agenda</a></div>
+      <div>
+        <div class="prose">
+          <p>
+            Member of <a href="https://www.pouet.net/groups.php?which=11222"><strong>Agenda</strong></a>. I focus mostly on
+            <strong>sizecoding</strong>: writing intros in 256, 128, 64 or even
+            fewer bytes that still manage to draw something worth watching. It is
+            an odd discipline, closer to mathematical puzzle-solving than to
+            software engineering, and I enjoy the way it strips programming down
+            to instructions and cycles.
+          </p>
+        </div>
+
+        <div class="awards" role="table" aria-label="Selected awards">
+          <div class="award" role="row">
+            <div class="award-year" role="cell">2014</div>
+            <div class="award-body" role="cell">
+              <div class="award-name">Meteoriks · Best Tiny Intro · <a href="https://www.pouet.net/prod.php?which=62917"><em>Mona</em></a></div>
+              <div class="award-cat">
+                <b>A rendition of the Mona Lisa</b>, since ported to a surprising
+                number of platforms, including a
+                <a href="https://codegolf.stackexchange.com/questions/126738/lets-draw-mona-lisa">Stack&nbsp;Exchange answer that runs in Excel</a>.
+              </div>
+            </div>
+            <div class="bytes" role="cell">256 b · Atari XL/XE</div>
+          </div>
+
+          <div class="award" role="row">
+            <div class="award-year" role="cell">2020</div>
+            <div class="award-body" role="cell">
+              <div class="award-name">Nano Award · <a href="https://www.pouet.net/prod.php?which=87549"><em>Moonrise</em></a></div>
+              <div class="award-cat"><b>Best Oldschool Tiny Intro</b></div>
+            </div>
+            <div class="bytes" role="cell">Tiny intro</div>
+          </div>
+
+          <div class="award" role="row">
+            <div class="award-year" role="cell">2021</div>
+            <div class="award-body" role="cell">
+              <div class="award-name">Nano Award · <a href="https://www.pouet.net/prod.php?which=88293"><em>Quarter Express</em></a></div>
+              <div class="award-cat"><b>Best Oldschool Tiny Intro</b></div>
+            </div>
+            <div class="bytes" role="cell">Tiny intro</div>
+          </div>
+
+          <div class="award" role="row">
+            <div class="award-year" role="cell">2022</div>
+            <div class="award-body" role="cell">
+              <div class="award-name">Nano Award · <a href="#sc-murkwood"><em>Murkwood</em></a></div>
+              <div class="award-cat"><b>Best Oldschool Tiny Intro</b></div>
+            </div>
+            <div class="bytes" role="cell">256 b · Atari XL/XE</div>
+          </div>
+
+          <div class="award" role="row">
+            <div class="award-year" role="cell">2022</div>
+            <div class="award-body" role="cell">
+              <div class="award-name">Nano Award · <a href="#sc-thrive"><em>Thrive</em></a></div>
+              <div class="award-cat"><b>Best Fantasy Console Tiny Intro</b></div>
+            </div>
+            <div class="bytes" role="cell">TIC-80</div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <div class="subsection-head">
+            <div class="subsection-num">04 / a · Productions</div>
+            <h3 class="subsection-title">Selected intros, <em>sources</em> and <em>screenshots</em>.</h3>
+          </div>
+
+          <p class="prose subsection-intro" style="font-size:16px;">
+            Full archive: <a href="https://github.com/ilmenit/sizecoding">github.com/ilmenit/sizecoding</a>.
+            Production lists on <a href="https://www.pouet.net/user.php?who=53891">pouët</a> and
+            <a href="https://demozoo.org/sceners/44556/">Demozoo</a>.
+          </p>
+
+          <div class="sc-grid">
+
+            <article class="sc-item" id="sc-encounter">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=96944" aria-label="Encounter on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/Encounter/encounter.png" alt="Encounter screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Encounter</em></div>
+                <div class="sc-meta"><span class="size">256 b</span><span class="plat">MicroW8</span><span>Outline 2024</span></div>
+                <div class="sc-note">A cinematic experience with no GPU and no shaders.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=96944">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/Encounter">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-urban-drift">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=103596" aria-label="Urban Drift on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/urban_drift/urban_drift.jpg" alt="Urban Drift screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Urban Drift</em></div>
+                <div class="sc-meta"><span class="size">512 b</span><span class="plat">MicroW8</span><span>Lovebyte 2025</span></div>
+                <div class="sc-note">Raymarched steel canyons, reflections chasing each other.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=103596">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/urban_drift">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-chaos-rose">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=96111" aria-label="Chaos Rose on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/chaos_rose/Chaos_Rose.png" alt="Chaos Rose screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Chaos Rose</em></div>
+                <div class="sc-meta"><span class="size">256 b</span><span class="plat">MicroW8</span><span>Lovebyte 2024</span></div>
+                <div class="sc-note">Parametric rose, after Paul Nylander.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=96111">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/chaos_rose">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-midnight-dream">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=96110" aria-label="Midnight Dream on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/midnight_dream/Midnight_Dream.png" alt="Midnight Dream screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Midnight Dream</em></div>
+                <div class="sc-meta"><span class="size">256 b</span><span class="plat">MicroW8</span><span>Lovebyte 2024</span></div>
+                <div class="sc-note">Silver moonlight weaving dreams.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=96110">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/midnight_dream">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-murkwood">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=91030" aria-label="Murkwood on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/murkwood/murkwood.png" alt="Murkwood screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Murkwood</em></div>
+                <div class="sc-meta"><span class="size">256 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-award">Nano Award 2022</div>
+                <div class="sc-note">Procedural forest, rain and four-channel music. Rain code by Koala.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=91030">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/murkwood">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-rescue-on-mars">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=91029" aria-label="Rescue on Mars on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/rescue_on_mars%21/rescue_on_mars%21.png" alt="Rescue on Mars screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Rescue on Mars!</em></div>
+                <div class="sc-meta"><span class="size">256 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-note">A flight over procedural Martian terrain. Real-time, full-screen, double-buffered.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=91029">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/rescue_on_mars!">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-sapere-aude">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=88989" aria-label="Sapere Aude on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/Sapere-Aude-C64/sapere-aude.png" alt="Sapere Aude screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Sapere Aude</em></div>
+                <div class="sc-meta"><span class="size">256 b</span><span class="plat">C64</span><span>Outline 2021</span></div>
+                <div class="sc-note">First C64 intro. Dare to know.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=88989">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/Sapere-Aude-C64">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-thrive">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=91578" aria-label="Thrive on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/thrive/thrive.gif" alt="Thrive animation"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Thrive</em></div>
+                <div class="sc-meta"><span class="size">Tiny</span><span class="plat">TIC-80</span><span>2022</span></div>
+                <div class="sc-award">Nano Award 2022</div>
+                <div class="sc-note">What will grow out of a tiny seed?</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=91578">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/thrive">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-parenthood">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=90971" aria-label="Parenthood on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/parenthood/parenthood.png" alt="Parenthood screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Parenthood</em></div>
+                <div class="sc-meta"><span class="size">256 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-note">Moments matter. Graphics by Emba.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=90971">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/parenthood">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-phase-of-haze">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=90970" aria-label="Phase of Haze on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/phase_of_haze/phase_of_haze.png" alt="Phase of Haze screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Phase of Haze</em></div>
+                <div class="sc-meta"><span class="size">128 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-note">Passing haze of discontent.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=90970">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/phase_of_haze">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-stairs">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=90968" aria-label="Stairs in the Sky on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/stairs_in_the_sky/stairs_in_the_sky.png" alt="Stairs in the Sky screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Stairs in the Sky</em></div>
+                <div class="sc-meta"><span class="size">128 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-note">The exit you were looking for.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=90968">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/stairs_in_the_sky">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-dirt-race">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=103592" aria-label="Dirt Race on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/dirt_race/dirt_race.png" alt="Dirt Race screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Dirt Race</em></div>
+                <div class="sc-meta"><span class="size">128 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2025</span></div>
+                <div class="sc-note">Loud, fast and dirty.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=103592">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/dirt_race">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-dekabyte">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=90967" aria-label="Dekabyte on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/dekabyte/dekabyte.png" alt="Dekabyte screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Dekabyte</em></div>
+                <div class="sc-meta"><span class="size">64 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-note">Less than hectobyte.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=90967">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/dekabyte">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-graphite32">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=90999" aria-label="Graphite32 on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/graphite32/graphite32.png" alt="Graphite32 screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Graphite32</em></div>
+                <div class="sc-meta"><span class="size">32 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-note">Carbon fiber-reinforced polymer.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=90999">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/graphite32">source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sc-item" id="sc-sunrise8">
+              <a class="sc-thumb" href="https://www.pouet.net/prod.php?which=90969" aria-label="Sunrise8 on pouët"><img loading="lazy" src="https://raw.githubusercontent.com/ilmenit/sizecoding/main/sunrise8/sunrise8.png" alt="Sunrise8 screenshot"></a>
+              <div class="sc-body">
+                <div class="sc-title"><em>Sunrise8</em></div>
+                <div class="sc-meta"><span class="size">8 b</span><span class="plat">Atari XL/XE</span><span>Lovebyte 2022</span></div>
+                <div class="sc-note">Day by day. Eight bytes, not counting the loader.</div>
+                <div class="sc-links">
+                  <a href="https://www.pouet.net/prod.php?which=90969">pouët</a>
+                  <a href="https://github.com/ilmenit/sizecoding/tree/main/sunrise8">source</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 05 BEYOND ----------------------------------------------- -->
+  <section class="section reveal" id="beyond">
+    <div class="section-head">
+      <div class="section-num"><span class="dot"></span>§ 05 · Beyond the keyboard</div>
+      <h2 class="section-title">Family first. Before that, <em>slightly unreasonable</em> hobbies.</h2>
+    </div>
+    <div class="section-body">
+      <div class="aside">Off the computer</div>
+      <div>
+        <div class="prose">
+          <p>
+            Married, two children, and most of what used to be my free time is now
+            spent with them, which is the right trade.
+          </p>
+        </div>
+
+        <ul class="hobbies">
+          <li><span class="yr">2001</span><span class="thing"><em>Skydiving</em> license</span></li>
+          <li><span class="yr">2002</span><span class="thing"><em>Paragliding</em> license</span></li>
+          <li><span class="yr">2005</span><span class="thing"><em>Caving.</em> Past member of several caving clubs. Great Snowy Cave, Poland, 800 m deep</span></li>
+          <li><span class="yr">2009</span><span class="thing"><em>Trad climbing.</em> An 18-pitch 5.10c route in the Dolomites</span></li>
+          <li><span class="yr">2014</span><span class="thing"><em>Reykjavík Marathon.</em> 3:45</span></li>
+          <li><span class="yr">∞</span><span class="thing"><em>Travelling and backpacking.</em> Forty-plus countries across six continents</span></li>
+        </ul>
+
+        <div class="prose">
+          <p>Mountains, wild places and long walks are still the preferred way to reset.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 06 ELSEWHERE -------------------------------------------- -->
+  <section class="section reveal" id="elsewhere">
+    <div class="section-head">
+      <div class="section-num"><span class="dot"></span>§ 06 · Elsewhere</div>
+      <h2 class="section-title">Where else to find me, and a quiet <em>tip jar</em>.</h2>
+    </div>
+    <div class="section-body">
+      <div class="aside">Profiles · mail</div>
+      <div>
+        <ul class="links">
+          <li><span class="lbl">GitHub</span><a href="https://github.com/ilmenit">github.com/ilmenit</a></li>
+          <li><span class="lbl">LinkedIn</span><a href="https://linkedin.com/in/jdebski">linkedin.com/in/jdebski</a></li>
+          <li><span class="lbl">YouTube</span><a href="https://www.youtube.com/ilmenit">youtube.com/ilmenit</a></li>
+          <li><span class="lbl">pouët</span><a href="https://www.pouet.net/user.php?who=53891">pouet.net/user.php?who=53891</a></li>
+          <li><span class="lbl">Demozoo</span><a href="https://demozoo.org/sceners/44556/">demozoo.org/sceners/44556</a></li>
+          <li><span class="lbl">Email</span><a href="mailto:jakunek@gmail.com">jakunek@gmail.com</a></li>
+        </ul>
+
+        <p class="coffee">
+          If something here saved you time or made your afternoon a bit better, you
+          are welcome to <a href="https://buymeacoffee.com/ilmenit">buy me a coffee</a>.
+          No obligation at all.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>Jakub D&#x119;bski <span class="mark">·</span> ilmenit <span class="mark">·</span> 2026</div>
+    <div>Handwritten. Served static from GitHub Pages.</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/hero/mona.js"></script>
+<script src="assets/js/hero/thrive.js"></script>
+<script src="assets/js/hero/encounter.js"></script>
+<script src="assets/js/hero/urban-drift.js"></script>
+<script src="assets/js/hero/rotator.js"></script>
+
+</body>
+</html>
