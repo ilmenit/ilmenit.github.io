@@ -321,6 +321,14 @@
 }
 .card-tags span + span::before { content: " · "; color: var(--c-rule); margin: 0 4px; }
 .card-desc { font-size: 17px; line-height: 1.6; color: var(--c-ink-2); margin-bottom: 12px; }
+.card-credits {
+  font-family: var(--ff-mono);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--c-muted);
+  margin: -4px 0 12px;
+  letter-spacing: 0.02em;
+}
 .card-links {
   font-family: var(--ff-mono);
   font-size: 12px;
